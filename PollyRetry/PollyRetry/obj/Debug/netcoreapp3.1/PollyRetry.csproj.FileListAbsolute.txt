@@ -22,6 +22,7 @@ D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\obj\Debug\netcoreapp3.1\PollyRetr
 D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\obj\Debug\netcoreapp3.1\PollyRetry.pdb
 D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\obj\Debug\netcoreapp3.1\PollyRetry.genruntimeconfig.cache
 D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\bin\Debug\netcoreapp3.1\Polly.dll
 D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\obj\Debug\netcoreapp3.1\PollyRetry.csproj.CoreCompileInputs.cache
 D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\obj\Debug\netcoreapp3.1\PollyRetry.MvcApplicationPartsAssemblyInfo.cs
 D:\-- Learning --\WebAPI\PollyRetry\PollyRetry\obj\Debug\netcoreapp3.1\PollyRetry.MvcApplicationPartsAssemblyInfo.cache

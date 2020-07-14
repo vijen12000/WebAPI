@@ -7,6 +7,8 @@ using Microsoft.Extensions.Hosting;
 using PollyRetry.Options;
 using PollyRetry.Services;
 using System;
+using System.Threading;
+using System.Threading.Tasks;
 
 namespace PollyRetry
 {
@@ -68,6 +70,35 @@ namespace PollyRetry
             {
                 endpoints.MapControllers();
             });
+        }
+    }
+
+    public class MigratorHostedService : IHostedService
+    {
+        // We need to inject the IServiceProvider so we can create 
+        // the scoped service, MyDbContext
+        private readonly IServiceProvider _serviceProvider;
+
+        public MigratorHostedService(IServiceProvider serviceProvider)
+        {
+            _serviceProvider = serviceProvider;
+        }
+
+        public async Task StartAsync(CancellationToken cancellationToken)
+        {
+            using (var scope = _serviceProvider.CreateScope())
+            {
+                // Get the DbContext instance
+                var githubService = scope.ServiceProvider.GetRequiredService<IGithubService>();                
+
+                //Do the migration asynchronously
+                await githubService.GetUserByUserName("vijen12000");
+            }
+        }
+
+        public Task StopAsync(CancellationToken cancellationToken)
+        {
+            return Task.CompletedTask;
         }
     }
 }
