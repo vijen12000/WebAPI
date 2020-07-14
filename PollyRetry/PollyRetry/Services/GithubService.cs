@@ -22,12 +22,12 @@ namespace PollyRetry.Services
         private const int MaxRetries = 3;
         private static readonly Random Random = new Random();
         private readonly HttpClient _httpClient;
-        private readonly AsyncRetryPolicy<GithubUser> _retryPolicy;
+        private readonly AsyncRetryPolicy _retryPolicy;
         
         public GithubService(HttpClient httpClient)
         {
             this._httpClient = httpClient;
-            this._retryPolicy = Policy<GithubUser>.Handle<HttpRequestException>().RetryAsync(MaxRetries);
+            this._retryPolicy = Policy.Handle<HttpRequestException>().RetryAsync(MaxRetries);
 
 
             this._httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
