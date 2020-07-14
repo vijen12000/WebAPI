@@ -16,6 +16,7 @@ namespace PollyRetry.Services
     public interface IGithubService
     {
         Task<GithubUser> GetUserByUserName(string userName);
+        Task<List<GithubUser>> GetUserFromOrgAsync(string orgName);
     }
     public class GithubService : IGithubService
     {
@@ -27,7 +28,8 @@ namespace PollyRetry.Services
         public GithubService(HttpClient httpClient)
         {
             this._httpClient = httpClient;
-            this._retryPolicy = Policy.Handle<HttpRequestException>().RetryAsync(MaxRetries);
+            this._retryPolicy = Policy.Handle<HttpRequestException>()
+                               .WaitAndRetryAsync(MaxRetries,times=>TimeSpan.FromMilliseconds(times*100));
 
 
             this._httpClient.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
@@ -81,6 +83,20 @@ namespace PollyRetry.Services
 
             //return user;    
         }
+        public async Task<List<GithubUser>> GetUserFromOrgAsync(string orgName)
+        {
+            return await _retryPolicy.ExecuteAsync(async () =>
+            {               
+                var result = await _httpClient.GetAsync($"orgs/{orgName}");
+                if (result.StatusCode == HttpStatusCode.NotFound)
+                {
+                    return null;
+                }
+
+                var resultString = await result.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<List<GithubUser>>(resultString);
+            });
+        }
+        }
+
     }
-   
-}

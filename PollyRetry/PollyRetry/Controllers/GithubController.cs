@@ -19,5 +19,12 @@ namespace PollyRetry.Controllers
             var user = await githubService.GetUserByUserName(userName);
             return user != null ? (IActionResult)Ok(user) : NotFound();
         }
+
+        [HttpGet("users/orgName")]
+        public async Task<IActionResult> GetUserInOrg(string orgName)
+        {
+            var users = await githubService.GetUserFromOrgAsync(orgName);
+            return users != null ? (IActionResult)Ok(users) : NotFound();
+        }
     }
 }
