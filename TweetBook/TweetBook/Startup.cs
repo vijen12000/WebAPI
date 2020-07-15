@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TweetBook.Options;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 
 namespace TweetBook
 {
@@ -39,8 +41,17 @@ namespace TweetBook
             {
                 x.SwaggerDoc("v1", new OpenApiInfo() { Title="Tweetbook API",Version="v1"});
             });
-                        
+
+            services.AddApiVersioning();
+
+            //services.AddApiVersioning(cfg=> {
+            //    cfg.DefaultApiVersion = new ApiVersion(1,1);
+            //    cfg.AssumeDefaultVersionWhenUnspecified = true;
+            //    cfg.ReportApiVersions = true;
+            //    cfg.ApiVersionReader =new QueryStringApiVersionReader("1.0");
+            //});
         }
+
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

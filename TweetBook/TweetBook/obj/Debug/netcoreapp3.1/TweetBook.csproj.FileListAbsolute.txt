@@ -17,6 +17,7 @@ D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.A
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.Versioning.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -41,7 +42,11 @@ D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.E
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
@@ -55,9 +60,11 @@ D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\runtimes\wi
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.csprojAssemblyReference.cache
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.AssemblyInfoInputs.cache
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.AssemblyInfo.cs
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.csproj.CoreCompileInputs.cache
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.MvcApplicationPartsAssemblyInfo.cs
+D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.MvcApplicationPartsAssemblyInfo.cache
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.RazorTargetAssemblyInfo.cache
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.csproj.CopyComplete
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\staticwebassets\TweetBook.StaticWebAssets.Manifest.cache
@@ -65,10 +72,3 @@ D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\staticwebas
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.dll
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.pdb
 D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.genruntimeconfig.cache
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.csproj.CoreCompileInputs.cache
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.MvcApplicationPartsAssemblyInfo.cs
-D:\-- Learning --\WebAPI\TweetBook\TweetBook\obj\Debug\netcoreapp3.1\TweetBook.MvcApplicationPartsAssemblyInfo.cache

@@ -80,6 +80,18 @@
           "buildMultiTargeting/Microsoft.AspnetCore.Identity.UI.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Versioning/4.1.1": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -313,7 +325,7 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll": {}
         }
       },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.5": {
+      "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.6": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
@@ -404,11 +416,11 @@
           "lib/netstandard2.0/Microsoft.Extensions.Logging.Abstractions.dll": {}
         }
       },
-      "Microsoft.Extensions.Options/3.1.5": {
+      "Microsoft.Extensions.Options/3.1.6": {
         "type": "package",
         "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.5",
-          "Microsoft.Extensions.Primitives": "3.1.5"
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "3.1.6",
+          "Microsoft.Extensions.Primitives": "3.1.6"
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
@@ -417,7 +429,7 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
         }
       },
-      "Microsoft.Extensions.Primitives/3.1.5": {
+      "Microsoft.Extensions.Primitives/3.1.6": {
         "type": "package",
         "compile": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
@@ -1661,6 +1673,22 @@
         "staticwebassets/V4/lib/jquery/dist/jquery.min.map"
       ]
     },
+    "Microsoft.AspNetCore.Mvc.Versioning/4.1.1": {
+      "sha512": "ioFhRz5gm2Ny+t758Jab638eTG8Uui++klcH00EgBuU/BQbjkbFY+9xw/CkoAChIcrJsoQP2NKDYJ09zN5jR0g==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.versioning/4.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.dll",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.pdb",
+        "lib/netcoreapp3.1/Microsoft.AspNetCore.Mvc.Versioning.xml",
+        "microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.versioning.nuspec"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -2062,17 +2090,17 @@
         "microsoft.extensions.dependencyinjection.nuspec"
       ]
     },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.5": {
-      "sha512": "2VSCj2TZPMdeEi279Lawi6qJQu4+sEWizSOYrhY6hapyS1jxn1jVUZT1Ugv68bya+x8+3lD4+RqhUZql9PhISQ==",
+    "Microsoft.Extensions.DependencyInjection.Abstractions/3.1.6": {
+      "sha512": "JVlypPjlPqOEyAhET6pA7TqrK+Ya8TrYe2vvqsp62TYKS87oNuReoS7XpDFW0rrOsQo66G1yYf3K0E+lJHFHuw==",
       "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.5",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/3.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.3.1.5.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.3.1.6.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec"
       ]
     },
@@ -2177,10 +2205,10 @@
         "microsoft.extensions.logging.abstractions.nuspec"
       ]
     },
-    "Microsoft.Extensions.Options/3.1.5": {
-      "sha512": "f+JT/7lkKBMp/Ak2tVjO+TD7o+UoCfjnExkZNn0PZIso8kIXrqNy6x42Lrxf4Q0pW3JMf9ExmL2EQlvk2XnFAg==",
+    "Microsoft.Extensions.Options/3.1.6": {
+      "sha512": "6nBkdL9UxCfA8eDuFBZVYAYpJhux0a6R7y58KcYnqKEYF84X9cK1uJQ9a+VWEWGXujMa4fnCGoVdKNYhANqbZg==",
       "type": "package",
-      "path": "microsoft.extensions.options/3.1.5",
+      "path": "microsoft.extensions.options/3.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2189,14 +2217,14 @@
         "lib/netcoreapp3.1/Microsoft.Extensions.Options.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Options.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
-        "microsoft.extensions.options.3.1.5.nupkg.sha512",
+        "microsoft.extensions.options.3.1.6.nupkg.sha512",
         "microsoft.extensions.options.nuspec"
       ]
     },
-    "Microsoft.Extensions.Primitives/3.1.5": {
-      "sha512": "6bLdjSAQix82oP2tsuX9MM2yjgUFFOkSZYyRSKoUULilw2cg0Y0H+dnugwYlfj8Jd7yjd/+QSdNBqEyYhTYv0w==",
+    "Microsoft.Extensions.Primitives/3.1.6": {
+      "sha512": "X+h3tO383iMbtFxYp6Al4pgBzbfQKJY8/gd4U7+sZy90XeSfnw5SwHyCiRrAePG6kee4zCGsvQHPCqaTZ876hw==",
       "type": "package",
-      "path": "microsoft.extensions.primitives/3.1.5",
+      "path": "microsoft.extensions.primitives/3.1.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2205,7 +2233,7 @@
         "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.xml",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.dll",
         "lib/netstandard2.0/Microsoft.Extensions.Primitives.xml",
-        "microsoft.extensions.primitives.3.1.5.nupkg.sha512",
+        "microsoft.extensions.primitives.3.1.6.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec"
       ]
     },
@@ -5535,8 +5563,10 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 3.1.5",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.5",
       "Microsoft.AspNetCore.Identity.UI >= 3.1.5",
+      "Microsoft.AspNetCore.Mvc.Versioning >= 4.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.5",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.5",
+      "Microsoft.Extensions.Options >= 3.1.6",
       "Swashbuckle.AspNetCore >= 5.5.1"
     ]
   },
@@ -5595,6 +5625,10 @@
             "target": "Package",
             "version": "[3.1.5, )"
           },
+          "Microsoft.AspNetCore.Mvc.Versioning": {
+            "target": "Package",
+            "version": "[4.1.1, )"
+          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[3.1.5, )"
@@ -5602,6 +5636,10 @@
           "Microsoft.EntityFrameworkCore.Tools": {
             "target": "Package",
             "version": "[3.1.5, )"
+          },
+          "Microsoft.Extensions.Options": {
+            "target": "Package",
+            "version": "[3.1.6, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
